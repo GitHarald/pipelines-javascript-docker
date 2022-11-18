@@ -1,13 +1,13 @@
 trigger:
- - main
+- main
 
- pool:
-   vmImage: 'default'
-   demands:
-    - agent.name -equals RS30133012
+pool:
+  name : Default
+  demands:
+   - agent.name -equals RS30133012
     
- variables:
-   imageName: 'pipelines-javascript-docker'
+variables:
+  imageName: 'pipelines-javascript-docker'
 
  steps:
  - task: Docker@2
