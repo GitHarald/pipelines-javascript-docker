@@ -2,8 +2,10 @@ trigger:
  - main
 
  pool:
-   vmImage: 'ubuntu-latest' 
-
+   vmImage: 'default'
+   demands:
+    - agent.name -equals RS30133012
+    
  variables:
    imageName: 'pipelines-javascript-docker'
 
